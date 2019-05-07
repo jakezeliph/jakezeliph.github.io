@@ -9,27 +9,37 @@
         <img src="coffeeman.jpg">
     
         <div>
-            <label for="sideA">Side A</label>
-            <input type="number" value="0" class="sideA">
-        </div>
-        
-        <div>
-            <label for="sideB">Side B</label>
+            <label for="question1">Side A</label>
             <input type="number" value="0" class="num1">
         </div>
         
         <div>
-            <label for="sideC">Side C</label>
+            <label for="question2">Side B</label>
+            <input type="number" value="0" class="num2">
+        </div>
+        
+        <div>
+            <label for="question3">Side C</label>
             <input type="submit" value="submit" class="submit">
             <p class="results">nothing</p>
         </div>
         
     <script>
+    var compute = document.querySelector(".submit");
+    
+    function calculator(){
+        var a = parseFloat(document.querySelector(".sideA").value);
+        console.log(a);
+        
+        var b = parseFloat(document.querySelector(d))
+    
+    
     console.log("we are inside the web");
     alert("Hello World!");
     var compute = document.querySelector(".submit");
     
-    function test(){
+    function pythagoras(){
+        
         document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
     }
     compute.addEventListener("click", test);
