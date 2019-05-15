@@ -4,62 +4,26 @@
         <title>Jake's Webpage</title>
     <head>
     <body>
-        <h1>Hello Welcome</h1>
-       
-        <img src="coffeeman.jpg">
-    
         <div>
-            <label for="input1">Input 1</label>
-            <input type="number" value="0" class="submit">
+            <input type="radio" name="response" value="yes">yes<br>
+            <input type="radio" name="response" value="no">no<br>
+            <input type="radio" name="response" value="maybe">maybe<br>
+            <input type="radio" name="response" value="sure why not">sure why not<br>
+            <input type="radio" name="response" value="what no how">what no how<br>
         </div>
         
-        <div>
-            <label for="input2">Input 2</label>
-            <input type="number" value="0" class="submit">
-        </div>
-        
-        <div>
-            <label for="input3">Submit</label>
-            <input type="submit" value="submit" class="submit">
-            <p class="results">nothing</p>
-        </div>
-        
-        <div>
-            <label for="results"</label>
-            <p class="addition">Addition</p>
-            <p class="subtraction">Subtraction</p>
-            <p class="multiplication">Multiplication</p>
-            <p class="division">Division</p>
-        </div>
-        
-        <div>
-    
-            <input type="radio" name="response" value="yes" class="yes" checked>Yes<br>
-            <input type="radio" name="response" value="no"  class="no"  checked>No<br>
-
-        </div>
+        <input type="submit" value="submit" class="submit">
+        <p class="out">Nothing yet</p>
         
     <script>
-    var compute = document.querySelector(".submit");
-    
-    function calculator(){
-        var a = parseFloat(document.querySelector(".input1").value);
-        console.log(a);
+        var submit = document.querySelector(".submit");
+        var out = document.querySelector(".out");
         
-        var b = parseFloat(document.querySelector(".input2").value);
-        console.log(a);
-    
-    
-    console.log("we are inside the web");
-    //alert("Hello World!");
-    var compute = document.querySelector(".submit");
-    
-    function pythagoras(){
-        
-        document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
-    }
-    compute.addEventListener("click", test);
+        function reply(){
+            var radios =document.getElementsByName("response");
+            console.log(radios);
+        }
+        submit.addEventListener("click", reply)
     </script>
     </body>
-    
 </html>
